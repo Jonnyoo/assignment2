@@ -2,10 +2,9 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: rgb(7,8,10);
+    overflow-x: hidden;
 }
 
-
-/* HERO SECTION */
 .wildrobotimg {
     width: 100%;
     height: auto;
@@ -13,6 +12,7 @@ html, body {
     padding: 0;
 }
 
+/* HERO SECTION */
 .button-overlay {
     position: relative;
     margin: 0;
@@ -20,12 +20,7 @@ html, body {
 }
 
 .hero-title {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px 35px;
-    font-size: 75px;
+    font-size: 60px;
     font-family: 'helvetica';
     font-weight: bold;
     margin: 0;
@@ -34,49 +29,59 @@ html, body {
 }
 
 .getstarted-button {
-    position: relative;
     padding: 20px 35px;
     font-size: 21px;
     font-weight: bold;
     font-family: 'helvetica';
-    margin: 0;
     background-color: #ffaa21;
     color: #111111;
     border-radius: 50px;
     border: none;
+    margin-left: 10px;
 }
 
 .email-input {
-    position: relative;
-    right: 30px;
     padding: 20px 35px;
     font-size: 20px;
     font-family: 'helvetica';
     font-weight: bold;
-    margin: 0;
-    color: #ffffff;
+    color: #000000;
     border-radius: 50px;
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.246);
-    border: 2px solid rgba(255, 255, 255, 0.501);
-    width: 500px;
+    background-color: #fff2d5eb;
+    border: 4px solid #ffaa21;
+    width: 100%;
+    max-width: 500px;
+}
+
+.hero-email ::placeholder {
+    color: #2b1a006f;
+    font-size: 20px;
+    font-family: 'helvetica';
+    font-weight: bold;
 }
 
 .hero-email {
-    position: absolute;
-    top: 53%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
 }
 
-/* HEADER / NAVIGATION BAR SECTION */
-.header-title {
+.text-signup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    position: relative;
-    margin-top: 19px;
-    margin-right: 110px;
-    margin-left: 10px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* HEADER/NAVIGATION BAR SECTION */
+.header-title {
     font-family: 'helvetica';
     font-size: 24px;
     color: #ffaa21;
@@ -96,10 +101,10 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    z-index: 1000; 
-    gap: 20px;
+    z-index: 1000;
+    gap: 70px;
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.035);
+    border: 3px solid rgba(255, 153, 0, 0.515);
 }
 
 .header button {
@@ -108,29 +113,19 @@ html, body {
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
+    width: 100px;
     font-size: 15px;
     font-weight: bold;
-    margin-right: -10px;
-    margin-left: 8px;
+    margin-right: -7px;
 }
 
-/* .search-bar input {
-    padding: 5px 10px;
-    border-radius: 25px;
-    border: none;
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
 }
-
-.search-bar button {
-    background-color: #fff7d5;
-    color: #644a00;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 10px;
-} */
-
 
 .nav-link {
     color: #fffdf6bb;
@@ -154,3 +149,174 @@ h2 {
     margin-inline: 40px;
 }
 
+/* MOVIES SECTION */
+.featured-movies, .popular-shows, .popular-movies {
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.movie-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 30px;
+}
+
+.movie-img {
+    width: 275px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.movie-img:hover {
+    border: 2px solid #ffaa21;
+}
+
+.movie-title {
+    font-family: 'helvetica';
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.moviesection-title {
+    font-family: 'helvetica';
+    font-size: 25px;
+    color: #ffffffe0;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 45px;
+    }
+
+    .email-input {
+        font-size: 14px;
+        padding: 15px 30px;
+        width: 300px;
+    }
+
+    .hero-email ::placeholder {
+        font-size: 14px;
+    }
+
+    .getstarted-button {
+        font-size: 14px;
+        padding: 15px 20px;
+        width: 130px;
+    }
+
+    .header {
+        padding: 10px 20px;
+        max-width: 800px;
+        height: 40px;
+        gap: 50px;
+    }
+
+    .header button {
+        padding: 10px 15px;
+        width: 80px;
+        font-size: 12px;
+        margin-right: -4px;
+    }
+
+    .header-title {
+        font-size: 20px;
+        margin-top: 14px;
+        margin-left: 5px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .email-input {
+        font-size: 12px;
+        padding: 10px 20px;
+        width: 200px;
+    }
+
+    .hero-email ::placeholder {
+        font-size: 12px;
+    }
+
+    .getstarted-button {
+        font-size: 12px;
+        padding: 12px 15px;
+        width: 100px;
+    }
+
+    .header {
+        padding: 8px 17px;
+        max-width: 600px;
+        height: 33px;
+        gap: 35px;
+    }
+
+    .header button {
+        padding: 8px 11px;
+        width: 70px;
+        font-size: 11px;
+        margin-right: -4px;
+    }
+
+    .header-title {
+        font-size: 18px;
+        margin-top: 14px;
+        margin-left: 5px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 20px;
+    }
+
+    .getstarted-button, .email-input {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .hero-email {
+        flex-direction: column;
+    }
+}
+
+
+/* .search-bar input {
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: none;
+}
+
+.search-bar button {
+    background-color: #fff7d5;
+    color: #644a00;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+} */
