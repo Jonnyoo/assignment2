@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: rgb(20, 20, 19);
@@ -68,8 +69,8 @@ body {
 }
 
 .getstarted-button:hover {
-    box-shadow: 0 0px 25px #ffaa21; 
-    transform: translateY(-4px); 
+    box-shadow: 0 0px 25px #ffaa21;
+    transform: translateY(-4px);
 }
 
 .email-input {
@@ -182,7 +183,9 @@ h2 {
 }
 
 /* MOVIES SECTION */
-.featured-movies, .popular-shows, .popular-movies {
+.featured-movies,
+.popular-shows,
+.popular-movies {
     padding: 20px;
     margin-inline: 20px;
 }
@@ -202,36 +205,36 @@ h2 {
 }
 
 .movie-container:hover .movie-img {
-    box-shadow: 0 0px 25px #ffaa21; 
-    transform: translateY(-8px); 
+    box-shadow: 0 0px 25px #ffaa21;
+    transform: translateY(-8px);
 }
 
 .movie-container:hover .rent-button {
-    transform: translateY(-8px); 
+    transform: translateY(-8px);
 }
 
 
 
 
 .movie-container {
-    position: relative; 
+    position: relative;
     max-width: 250px;
 }
 
 .rent-button {
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    padding: 5px 10px; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
     font-size: 14px;
     font-family: 'helvetica';
     font-weight: bold;
-    color: #191919; 
-    background-color: #ededed; 
-    border: none; 
-    border-radius: 15px; 
-    cursor: pointer; 
-    z-index: 1; 
+    color: #191919;
+    background-color: #ededed;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 1;
     transition: transform 0.3s ease;
 }
 
@@ -249,7 +252,7 @@ h2 {
     font-size: 25px;
     color: #ffffffe0;
     font-weight: bold;
-    display: inline-block; 
+    display: inline-block;
     position: relative;
     padding-bottom: 10px;
 }
@@ -257,7 +260,7 @@ h2 {
 .moviesection-title::after {
     content: "";
     display: block;
-    width: 100%; 
+    width: 100%;
     height: 5px;
     background-color: #ffaa21;
     position: absolute;
@@ -267,20 +270,20 @@ h2 {
 
 /* Footer Styles */
 footer {
-    background-color: #1c1e22; 
-    color: #ffffff; 
-    padding: 40px 20px; 
-    height: 250px; 
+    background-color: #1c1e22;
+    color: #ffffff;
+    padding: 40px 20px;
+    height: 250px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     margin: 0 auto;
-    margin-top: 100px; 
+    margin-top: 100px;
     border-radius: 70px 70px 0 0;
 }
 
 .footer-section {
-    display: flex; 
+    display: flex;
     justify-content: center;
     width: 100%;
     max-width: 1200px;
@@ -290,7 +293,7 @@ footer {
 }
 
 .column {
-    flex: 1; 
+    flex: 1;
     padding: 0 20px;
     max-width: 500px;
 }
@@ -306,8 +309,8 @@ footer {
 .footer-signup-title {
     font-family: helvetica;
     font-size: 45px;
-    font-weight: bold; 
-    margin-bottom: 10px; 
+    font-weight: bold;
+    margin-bottom: 10px;
     color: #ffaa21;
 }
 
@@ -321,7 +324,7 @@ footer {
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ffaa21;
-    border-radius: 25px; 
+    border-radius: 25px;
     width: 70%;
     background-color: #feebcd;
 }
@@ -334,30 +337,30 @@ footer {
 
 .footer-getstarted-button {
     padding: 10px;
-    font-size: 16px; 
-    background-color: #ffaa21; 
-    color: #111111; 
-    border: none; 
-    border-radius: 25px; 
+    font-size: 16px;
+    background-color: #ffaa21;
+    color: #111111;
+    border: none;
+    border-radius: 25px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     white-space: nowrap;
 }
 
 .footer-getstarted-button:hover {
-    box-shadow: 0 0px 15px #ffaa21; 
-    transform: translateY(-4px); 
+    box-shadow: 0 0px 15px #ffaa21;
+    transform: translateY(-4px);
 }
 
 .footer-section a {
     font-family: helvetica;
-    color: #ffffff; 
-    text-decoration: none; 
-    font-size: 18px;   
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .footer-section a:hover {
-    color: #ffaa21; 
+    color: #ffaa21;
 }
 
 /* Media Queries */
@@ -409,6 +412,7 @@ footer {
     .movie-container {
         max-width: 200px;
     }
+
     .movie-img {
         border-radius: 17px;
     }
@@ -434,11 +438,12 @@ footer {
     .movie-card {
         gap: 20px;
     }
+
     .rent-button {
-        padding: 4px 8px; 
-        font-size: 12px; 
-        top: 8px; 
-        left: 8px; 
+        padding: 4px 8px;
+        font-size: 12px;
+        top: 8px;
+        left: 8px;
     }
 }
 
@@ -488,13 +493,13 @@ footer {
     }
 
     footer {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-section {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .movie-img {
@@ -504,11 +509,12 @@ footer {
     .movie-card {
         gap: 15px;
     }
+
     .rent-button {
-        padding: 3px 6px; 
-        font-size: 11px; 
-        top: 6px; 
-        left: 6px; 
+        padding: 3px 6px;
+        font-size: 11px;
+        top: 6px;
+        left: 6px;
     }
 }
 
@@ -517,7 +523,8 @@ footer {
         font-size: 20px;
     }
 
-    .getstarted-button, .email-input {
+    .getstarted-button,
+    .email-input {
         font-size: 14px;
         padding: 8px 20px;
     }
@@ -537,10 +544,11 @@ footer {
     .movie-card {
         gap: 10px;
     }
+
     .rent-button {
-        padding: 2px 5px; 
-        font-size: 10px; 
-        top: 5px; 
-        left: 5px; 
+        padding: 2px 5px;
+        font-size: 10px;
+        top: 5px;
+        left: 5px;
     }
 }
